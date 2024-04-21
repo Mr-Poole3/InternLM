@@ -1,13 +1,34 @@
-# 300字故事生成
-  ## ![image](https://github.com/Mr-Poole3/-/assets/112788987/4514f48e-d956-40d5-84b5-fe3bac853b2a)
-# 相关下载功能
- <h2>环境包，模型InternLM2-Chat-1.8B下载
- <img width="989" alt="768434e752099d077506283494d1e34" src="https://github.com/Mr-Poole3/-/assets/112788987/b411336c-17ec-4e81-8b6e-3e0b505c95b8"></h2>
-<h2>八戒-Chat-1.8B 模型下载** <br>
-<img width="486" alt="56a697ca9f8966a368199df5bcac64c" src="https://github.com/Mr-Poole3/-/assets/112788987/017f5e3b-f1b3-4dc5-987b-2e1b3fabe2e7"><br/></h2>
-<h2>八戒模型载入<br/>
-<img width="991" alt="b35f67fd6885b60818d838ef3f9e079" src="https://github.com/Mr-Poole3/-/assets/112788987/7d886e8b-152f-46b6-b2f4-ca052165f77c"></h2>
-<h2>
-  八戒模型使用
-  <img width="1239" alt="e357ed1976a13a343631f14d8d6aec9" src="https://github.com/Mr-Poole3/-/assets/112788987/50260392-0ccf-4259-9fd9-52e373881c4d">
-</h2>
+# 实战训练营第三课作业
+
+作业详情： 
+
+- 在[茴香豆 Web 版](https://openxlab.org.cn/apps/detail/tpoisonooo/huixiangdou-web)中创建自己领域的知识问答助手
+- 参考视频[零编程玩转大模型，学习茴香豆部署群聊助手](https://www.bilibili.com/video/BV1S2421N7mn)
+- 完成不少于 400 字的笔记 + 线上茴香豆助手对话截图(不少于5轮)
+
+首先我们打开茴香豆Web版本
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/4e3c7ee4-3114-4594-86de-d2cff6b3b1dd)
+创建一个自己的数据库并设置密码
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/18461b2a-5304-4357-a7b5-bd4d499b2c94)
+添加文档<br>
+单击查看或上传按钮。
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/b5207313-161d-4948-9995-1a91c31dd2f0)<br>
+我们上传一份《基于人工智能的小学生英语口语教辅系统的设计与实现》，希望茴香豆帮助我们阅读
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/ec3e1845-a549-453c-88be-9ba36ce0f816)
+使用中文提问：论文的模型和技术路线
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/31526614-8cba-42aa-8461-99f684001564)
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/8f8dbda5-156e-4162-adb8-9f848c9781cd)
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/ee57625f-dc9c-4445-8871-d84957e19db7)
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/cfff91dc-870d-4df8-9eb3-41f55acafa68)
+![Snipaste_2024-04-21_13-34-51](https://github.com/Mr-Poole3/InternLM/assets/112788987/21fe5d46-a2df-4a42-ae1a-f7d7a6a29ffc)
+# 笔记
+文章首先介绍了茴香豆的基本概念和用途，即作为基于 LLM 的领域知识助手，用于解答群聊中的问题。然后，文章详细介绍了如何创建自己的知识问答助手，包括创建知识库、添加文档等步骤。接着，文章介绍了如何部署茴香豆技术助手，以及如何使用 Gradio 搭建网页 Demo。同时，文章也提到了如何加入网络搜索和远程模型注册，以及在飞书和微信中应用茴香豆。最后，文章列举了一些茴香豆的应用场景和优势，并提供了安装和配置的指导。茴香豆是一款基于语言模型（LLM）的知识问答助手，可以用于解答群聊中的问题。
+它的作用主要有以下几个方面：
+
+- 提高效率：茴香豆可以帮助用户快速地获取所需信息，节省了寻找答案的时间成本。尤其是在团队协作中，茴香豆可以提高沟通效率，避免了因为信息不对称而导致的工作延误。
+- 减少误解：茴香豆的回答都是基于文本分析得出的，因此不会受到主观因素的影响，能够提供客观准确的答案。这有助于减少因误解而产生的不必要的麻烦和矛盾。
+- 个性化服务：茴香豆可以根据用户的兴趣爱好和历史记录来推荐相关的内容，从而实现个性化的服务。这对于用户来说是一种非常好的体验，能够更好地满足他们的需求。
+- 持续学习：茴香豆可以通过不断地学习新的知识和技能来不断提升自己的能力，从而更好地服务于用户。这种持续学习的能力也是茴香豆的一个重要特点。
+- 应用广泛：茴香豆不仅可以应用于团队协作中，还可以用于教育、医疗等领域。比如，在教育领域，茴香豆可以帮助学生解决问题，提高学习效率；在医疗领域，茴香豆可以帮助医生诊断疾病，提高治疗效果。
+
+如果你正在学习相关的技术或者领域知识，那么茴香豆可以为你提供一个很好的学习工具。通过茴香豆，你可以快速地获取所需的信息，解决遇到的问题，提高学习效率。另外，茴香豆也可以作为一个智能助手，帮助你规划学习计划，提醒你完成任务等。这些都可以让你更加高效地学习，提高学习成果。
