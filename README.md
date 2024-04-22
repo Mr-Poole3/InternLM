@@ -30,8 +30,9 @@ cd /root/xtuner0117/xtuner
 # 从源码安装 XTuner
 pip install -e '.[all]'
 ```
+![Snipaste_2024-04-22_14-16-56](https://github.com/Mr-Poole3/InternLM/assets/112788987/97677ede-25c9-4e5e-8298-f7207f6cfc9e)
 
-![微信图片_20240402200202](C:\Users\28402\Pictures\微信图片_20240402200202.png)
+
 
 ## 前期准备
 
@@ -110,11 +111,13 @@ mkdir -p /root/ft/model
 cp -r /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-1_8b/* /root/ft/model/
 ```
 
-![Snipaste_2024-04-22_14-41-38](C:\Users\28402\Pictures\Snipaste_2024-04-22_14-41-38.jpg)
+![Snipaste_2024-04-22_14-41-38](https://github.com/Mr-Poole3/InternLM/assets/112788987/429f6f5e-fecf-4ce4-ad1c-96fca1953707)
+
 
 ### 选择配置文件
 
-![image-20240422145238608](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422145238608.png)
+![Snipaste_2024-04-22_14-52-48](https://github.com/Mr-Poole3/InternLM/assets/112788987/097dc98a-798f-4924-9d18-222c84517ad7)
+
 
 ### 配置文件修改
 
@@ -342,24 +345,28 @@ log_processor = dict(by_epoch=False)
 
 ### 训练模型
 
-![image-20240422151410027](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422151410027.png)
+![Snipaste_2024-04-22_15-14-14](https://github.com/Mr-Poole3/InternLM/assets/112788987/910ac94b-58c5-40c3-8673-fe022c00b4a6)
 
-![image-20240422152651070](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422152651070.png)
+
+![Snipaste_2024-04-22_15-26-40](https://github.com/Mr-Poole3/InternLM/assets/112788987/9f4862ce-f033-4983-8d10-062de1db55ff)
+
 
 ### 模型转换
 
-![image-20240422154410117](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422154410117.png)
+![Snipaste_2024-04-22_15-43-54](https://github.com/Mr-Poole3/InternLM/assets/112788987/9249bd5d-c093-4d50-a241-8ec18a4b22bd)
+
 
 ### 模型整合
 
-![image-20240422155108059](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422155108059.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/a9ad3727-26a6-4501-a4de-645d5f037076)
+
 
 ### 模型对话
 
-![image-20240422160134008](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422160134008.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/bcc4024b-f3ca-475a-83b1-7df9cda330db)
+
 
 ### 部署到web端
+![Snipaste_2024-04-22_16-17-26](https://github.com/Mr-Poole3/InternLM/assets/112788987/5afa5e0d-7d72-4483-9291-24389d790141)
 
-![image-20240422161705336](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422161705336.png)
-
-![image-20240422161716334](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422161716334.png)
+![Snipaste_2024-04-22_16-17-20](https://github.com/Mr-Poole3/InternLM/assets/112788987/2d9188ce-2bcb-495c-8ba1-d3974e8f23cb)
