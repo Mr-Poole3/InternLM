@@ -7,34 +7,40 @@
 ```python
 studio-conda -t lmdeploy -o pytorch-2.1.2
 ```
+![Snipaste_2024-04-22_22-37-01](https://github.com/Mr-Poole3/InternLM/assets/112788987/4a6326e1-8d0a-4f67-a281-b4775ed81824)
 
-![image-20240422223620347](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422223620347.png)
+![2](https://github.com/Mr-Poole3/InternLM/assets/112788987/e602084e-b95b-49dd-9cef-2c116b43a1f1)
 
-![image-20240422224907088](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422224907088.png)
 
 ### 安装0.3版本的lmdeploy。
 
-![image-20240422225342721](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422225342721.png)
+![3](https://github.com/Mr-Poole3/InternLM/assets/112788987/3da7632e-6a71-4bb8-9200-6b3b9e77c53c)
+
 
 ### 新建pipeline_transformer.py文件
 
-![image-20240422230448224](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422230448224.png)
+![4](https://github.com/Mr-Poole3/InternLM/assets/112788987/0f2fdef7-722b-444a-920b-01152b620454)
+
 
 ### 测试模型
 
-![image-20240422230708545](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422230708545.png)
+![5](https://github.com/Mr-Poole3/InternLM/assets/112788987/7c26df38-3a27-4bf4-ab62-2bd217e2e69c)
 
-![image-20240422231123652](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422231123652.png)
+
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/6c8e3735-98b1-428d-9480-d3933c2b859d)
+
 
 可以看出，这个推理也是占用了巨大内存
 
 ## 使用LMDeploy与模型对话
 
-![image-20240422231859066](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422231859066.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/de65d254-3ac2-4359-a9c6-4ab15e62d93a)
+
 
 ### 以命令行方式与InternLM2-Chat-1.8B大模型对话
 
-![image-20240422232857184](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240422232857184.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/19ba8f5c-0e4c-4440-a037-de215db7d243)
+
 
 ## 笔记
 
