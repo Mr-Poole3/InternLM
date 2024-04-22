@@ -370,3 +370,15 @@ log_processor = dict(by_epoch=False)
 ![Snipaste_2024-04-22_16-17-26](https://github.com/Mr-Poole3/InternLM/assets/112788987/5afa5e0d-7d72-4483-9291-24389d790141)
 
 ![Snipaste_2024-04-22_16-17-20](https://github.com/Mr-Poole3/InternLM/assets/112788987/2d9188ce-2bcb-495c-8ba1-d3974e8f23cb)
+<h2>笔记</h2> 
+<h3>全文概述</h3>
+这篇文章主要是关于训练自己的小助手的认知和准备数据集的作业。文章首先介绍了准备环境的步骤，包括从本地clone环境或在其他平台创建环境，并激活环境。接下来，文章介绍了准备数据集的步骤，包括创建文件夹、进入文件夹，并使用generate_data.py脚本生成数据集。然后，文章介绍了准备模型的步骤，包括创建目标文件夹并将模型复制到该文件夹。之后，文章介绍了配置文件的修改，包括设置模型预训练路径、使用变长自注意力等。接着，文章介绍了模型和tokenizer的设置，包括使用SupervisedFinetune和AutoModelForCausalLM等。然后，文章介绍了数据集和dataloader的设置，包括使用process_hf_dataset和SequenceParallelSampler等。接下来，文章介绍了scheduler和optimizer的设置，包括使用AmpOptimWrapper和LinearLR等。最后，文章介绍了runtime的设置，包括使用LoggerHook和CheckpointHook等。<br>
+<h3>关键要点</h3>
+<ul>
+<li>通过XTuner库进行聊天机器人训练和部署。</li>
+<li>需要创建环境并激活，下载相关源码和数据集。</li>
+<li>配置文件包含模型、数据加载器、优化器等设置。</li>
+<li>可以使用自定义钩子来监控训练过程。</li>
+<li>训练完成后可以将模型部署到Web端。</li>
+</ul>
+
