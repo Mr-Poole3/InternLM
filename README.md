@@ -1,86 +1,45 @@
-# 作业六作业及笔记
+# 第七课作业及笔记
 
-## 基础作业
+## 使用 OpenCompass 评测 internlm2-chat-1_8b 模型在 C-Eval 数据集上的性能。
 
-### 完成 Lagent Web Demo 使用，并在作业中上传截图。
-
-#### 安装环境
+### 创建环境
 
 ```python
-mkdir -p /root/agent
-studio-conda -t agent -o pytorch-2.1.2
-cd /root/agent
-conda activate agent
-git clone https://gitee.com/internlm/lagent.git
-cd lagent && git checkout 581d9fb && pip install -e . && cd ..
-git clone https://gitee.com/internlm/agentlego.git
-cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
-```
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/21532ef0-25ed-4eef-9969-6b81fd2e0a48)
-
-
-
-#### 安装lagent和agentlego
-
-```
-cd /root/agent
-conda activate agent
-git clone https://gitee.com/internlm/lagent.git
-cd lagent && git checkout 581d9fb && pip install -e . && cd ..
-git clone https://gitee.com/internlm/agentlego.git
-cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
+studio-conda -o internlm-base -t opencompass
+source activate opencompass
+git clone -b 0.2.4 https://github.com/open-compass/opencompass
+cd opencompass
+pip install -e .
 ```
 
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/383ae793-e20b-41d5-8099-1031cf116ade)
+![image-20240423125230786](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423125230786.png)
 
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/d0f8d1de-c9e8-4abc-9a7b-4f53b5d32373)
-
-#### Lagent：轻量级智能体框架
-
-启动一个 api_server
-
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/8fc18a78-e1f8-4f11-9147-9741e3f0652f)
-
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/20501d97-ec05-4dbf-9f10-a53d27ca7ef3)
-
-### AgentLego：组装智能体“乐高”
-
-#### 下载demo
+**如果pip install -e .安装未成功,请运行:**
 
 ```python
-cd /root/agent
-wget http://download.openmmlab.com/agentlego/road.jpg
-conda activate agent
-pip install openmim==0.3.9
-mim install mmdet==3.3.0
+pip install -r requirements.txt
 ```
 
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/3b0e9adf-fddc-4a39-ae7d-18d31fc1113b)
+### 解压评测数据
 
+![image-20240423145407881](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423145407881.png)
 
-#### 推理图片
+### 查看支持的数据集和模型
 
-进行推理。在等待 RTMDet-Large 权重下载并推理完成后，我们就可以看到如下输出以及一张位于 /root/agent 名为 road_detection_direct.jpg 的图片
+![image-20240423145740569](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423145740569.png)
 
-```python
-python /root/agent/direct_use.py
-```
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/fda1afe3-745e-47e3-b3da-d81c1dcb052d)
+### 启动测评
 
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/9c979228-e527-4896-87e5-c71bfb6f8aed)
-
-![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/16662e20-3d97-41da-b248-7439b4010144)
+![image-20240423151704909](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423151704909.png)
 
 # 笔记
 
-本文介绍了AgentLego的使用方法，包括直接使用AgentLego作为智能体工具以及自定义工具两种方式。在直接使用AgentLego作为智能体工具的例子中，我们首先下载demo文件，然后安装目标检测工具所需的依赖，接着通过touch命令创建直接使用目标检测工具的python文件，并在文件中编写代码进行推理。在自定义工具的例子中，我们创建了一个调用MagicMakerAPI进行图像生成的工具，并将其注册到工具列表中。最后，我们在两个终端中分别启动LMDeploy服务和AgentLego的WebUI，以体验自定义工具的效果。
+本文介绍了OpenCompass平台，该平台发布了大模型开源开放评测体系，旨在为大语言模型和多模态模型提供一站式评测服务。OpenCompass提供了丰富的模型支持和功能，包括70多个数据集和约40万题的模型评测方案。该平台具有全面的能力维度设计，包括语言、知识、理解、推理和安全等多个能力维度的评测。此外，OpenCompass还提供了客观评测和主观评测两种方式来评估模型的性能。文章还介绍了模型的客观评测和主观评测的具体步骤和指导。最后，文章讨论了数据污染评估和大海捞针测试两种评估方法，以进一步评估大模型的能力和性能。
 
-具体步骤包括：
+## 关键要点
 
-1. 修改相关文件，例如使用 Mim 工具来安装所需的依赖。
-2. 使用 LMDeploy 部署，可以通过修改配置文件和启动服务来实现。
-3. 使用 AgentLego WebUI，可以通过启动服务和上传图片来使用工具。
-
-作为智能体工具则需要先修改算法库的相关配置，例如修改模型 URL 和 Agent name，然后再配置工具并使用 AgentLego WebUI。此外，还可以使用 AgentLego 提供的自定义工具接口来构建自己的工具。
-
-总的来说，AgentLego 提供了一个方便易用的工具集，可以帮助开发者快速搭建智能体应用，并支持自定义工具的开发。
+1. OpenCompass 2.0 是一个大模型开源开放评测体系，可用于为大语言模型、多模态模型等提供一站式评测服务。
+2. 其主要特点是开源可复现、全面的能力维度、丰富的模型支持、分布式高效评测和多样化评测范式。
+3. OpenCompass 提供了丰富的功能支持自动化地开展大语言模型的高效评测。
+4. 它的设计思路是从通用人工智能的角度出发，结合学术界的前沿进展和工业界的最佳实践，提出一套面向实际应用的模型能力评价体系。
+5. 在评测过程中，采用了提示词工程和语境学习进行客观评测，并使用真实人类专家的主观评测与基于模型打分的主观评测相结合的方式开展模型能力评估。1
