@@ -16,8 +16,9 @@ cd lagent && git checkout 581d9fb && pip install -e . && cd ..
 git clone https://gitee.com/internlm/agentlego.git
 cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
 ```
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/21532ef0-25ed-4eef-9969-6b81fd2e0a48)
 
-![image-20240423124749962](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423124749962.png)
+
 
 #### 安装lagent和agentlego
 
@@ -30,17 +31,17 @@ git clone https://gitee.com/internlm/agentlego.git
 cd agentlego && git checkout 7769e0d && pip install -e . && cd ..
 ```
 
-![image-20240423131525808](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423131525808.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/383ae793-e20b-41d5-8099-1031cf116ade)
 
-![image-20240423132622272](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423132622272.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/d0f8d1de-c9e8-4abc-9a7b-4f53b5d32373)
 
 #### Lagent：轻量级智能体框架
 
 启动一个 api_server
 
-![image-20240423134047148](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423134047148.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/8fc18a78-e1f8-4f11-9147-9741e3f0652f)
 
-![image-20240423134135607](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423134135607.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/20501d97-ec05-4dbf-9f10-a53d27ca7ef3)
 
 ### AgentLego：组装智能体“乐高”
 
@@ -54,7 +55,8 @@ pip install openmim==0.3.9
 mim install mmdet==3.3.0
 ```
 
-![image-20240423140758645](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423140758645.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/3b0e9adf-fddc-4a39-ae7d-18d31fc1113b)
+
 
 #### 推理图片
 
@@ -63,12 +65,11 @@ mim install mmdet==3.3.0
 ```python
 python /root/agent/direct_use.py
 ```
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/fda1afe3-745e-47e3-b3da-d81c1dcb052d)
 
-![image-20240423141839604](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423141839604.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/9c979228-e527-4896-87e5-c71bfb6f8aed)
 
-![image-20240423142113610](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423142113610.png)
-
-![image-20240423142144416](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423142144416.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/16662e20-3d97-41da-b248-7439b4010144)
 
 # 笔记
 
