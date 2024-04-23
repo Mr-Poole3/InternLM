@@ -12,7 +12,8 @@ cd opencompass
 pip install -e .
 ```
 
-![image-20240423125230786](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423125230786.png)
+1![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/1cb57680-d7e7-4e88-ba68-657f067c1516)
+
 
 **如果pip install -e .安装未成功,请运行:**
 
@@ -22,15 +23,18 @@ pip install -r requirements.txt
 
 ### 解压评测数据
 
-![image-20240423145407881](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423145407881.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/a28170a3-fcbb-4da6-bb15-f57c9501e456)
+
 
 ### 查看支持的数据集和模型
 
-![image-20240423145740569](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423145740569.png)
+1![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/dd9f8fa8-dc81-4183-a676-a5b2b75d936f)
+
 
 ### 启动测评
 
-![image-20240423151704909](C:\Users\28402\AppData\Roaming\Typora\typora-user-images\image-20240423151704909.png)
+![image](https://github.com/Mr-Poole3/InternLM/assets/112788987/933b031f-620e-4543-babb-8570399763e5)
+
 
 # 笔记
 
